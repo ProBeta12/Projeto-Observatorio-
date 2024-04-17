@@ -2,7 +2,7 @@
 async function obterConteudoHTML() {
 try {
     // Faz uma solicitação para obter o conteúdo do arquivo HTML
-    const response = await fetch('/view/components/principais-eventos.html');
+    const response = await fetch('/view/components/footer.html');
 
     // Verifica se a resposta é bem-sucedida
     if (!response.ok) {
@@ -23,10 +23,10 @@ try {
 
 async function main() {
     const conteudoHTML = await obterConteudoHTML();
-    const eventos = document.querySelector('footer');
-    // Insere o conteúdo HTML após carrosel
+    const slider = document.querySelector('header');
+    // Insere o conteúdo HTML após header
     // document.body.insertAdjacentHTML('beforeend', conteudoHTML);
-    eventos.insertAdjacentHTML('beforebegin', conteudoHTML);
+    slider.insertAdjacentHTML('afterend', conteudoHTML);
 }
 
 // Chama a função principal

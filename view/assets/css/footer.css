@@ -1,0 +1,28 @@
+footer {
+    position: relative;
+    background-color: #484040;
+    color: #FFFFFF;
+    height: 175px;
+}
+
+.footer_a {
+    position: absolute;
+    top: 16px;
+    right: 35px;
+}
+ footer p {
+    position: absolute;
+    top: 76px;
+    left: 35px;
+ }
+footer ul {
+    position: absolute;
+    top: 76px;
+    right: 35px;
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul  li:not(:last-child){
+    margin-right: 30px;
+}

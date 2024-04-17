@@ -22,9 +22,9 @@ async function obterConteudoHTML() {
   
   async function main() {
     const conteudoHTML = await obterConteudoHTML();
-    const carrossel = document.querySelector('header');
+    const carrossel = document.querySelector('footer');
     // Insere o conteúdo HTML após o cabeçalho
-    carrossel.insertAdjacentHTML('afterend', conteudoHTML);
+    carrossel.insertAdjacentHTML('beforebegin', conteudoHTML);
     let cont = 1;
     document.getElementById("radio1").checked = true;
 
