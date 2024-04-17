@@ -1,0 +1,20 @@
+@import url('/view/assets/css/home/carrossel.css');
+@import url('/view/assets/css/header.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 1288px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
