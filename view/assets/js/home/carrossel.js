@@ -22,13 +22,24 @@ async function obterConteudoHTML() {
   
   async function main() {
     const conteudoHTML = await obterConteudoHTML();
-    document.body.insertAdjacentHTML('beforeend', conteudoHTML);
+    const carrossel = document.querySelector('header');
+    // Insere o conteúdo HTML após o cabeçalho
+    carrossel.insertAdjacentHTML('afterend', conteudoHTML);
+    let cont = 1;
+    document.getElementById("radio1").checked = true;
+
+    setInterval(function(){
+        nextImg();
+    }, 4000);
+
+    function nextImg(){
+        cont++;
+        if(cont > 3){
+            cont = 1;
+        }
+        document.getElementById("radio" + cont).checked = true;
+    }
   }
   
   // Chama a função principal
   main();
-
-
-
-
-  

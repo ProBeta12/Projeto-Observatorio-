@@ -1,4 +1,141 @@
-.carrossel_home{
-    background-color: aquamarine;
-    color: yellow;
+.slider {
+    margin: 0 auto;
+    width: 1288px;
+    height: 435px;
+    overflow: hidden;
 }
+
+.slides {
+    background-color: aqua;
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.titulo1,.titulo2,.titulo3 {
+    position: absolute;
+    top: 69px;
+    left: 122px;
+    color: #FFFFFF;
+}
+.titulo1 h1,.titulo2 h1,.titulo3  h1 {
+    font-size: 32px;
+    width: 709px;
+}
+.titulo1 p,.titulo2 p ,.titulo3  p {
+    font-size: 20px;
+    width: 670px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.titulo1 button,.titulo2 button,.titulo3  button {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 29px;
+        color: #FFFFFF; 
+        width: 276px;
+        height: 74px;
+        background-color: #627254;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px ;
+        margin-left: 20px;
+        margin-top: 20px;
+}
+
+.slide img {
+    width: 1288px;
+}
+
+.manual-navigation{
+    /* background-color: aqua; */
+    position: absolute;
+    width: 1288px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #627254;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    caret-color: transparent;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #627254;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+
+.navigation-auto div {
+ border: 1px solid #627254 ;
+ padding: 10px;
+ border-radius: 20px;
+ cursor: pointer;
+ transition: 1s;
+}
+
+.navigation-auto  {
+    position: absolute;
+    width: 1288px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #627254;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #627254;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #627254;
+}
+

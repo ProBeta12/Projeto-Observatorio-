@@ -1,3 +1,4 @@
+@import url('/view/assets/css/principais-eventos.css');
 @import url('/view/assets/css/home/carrossel.css');
 @import url('/view/assets/css/header.css');
 * {
@@ -6,6 +7,7 @@
 }
 
 body {
+    background-color: #E5E5E5;
     width: 1288px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
