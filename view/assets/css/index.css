@@ -3,6 +3,8 @@
 @import url('/view/assets/css/home/carrossel.css');
 @import url('/view/assets/css/header.css');
 @import url('/view/assets/css/footer.css');
+@import url('/view/assets/css/noticias/noticias.css');
+
 * {
     padding: 0;
     margin: 0;

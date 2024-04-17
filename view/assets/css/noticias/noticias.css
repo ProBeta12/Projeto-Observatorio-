@@ -1,0 +1,19 @@
+.noticias {
+    background-color: #FFFFFF;
+    padding-bottom: 65px;
+}
+.noticias h1 {
+    padding-top: 90px;
+    margin-left: 104px;
+    color: #4E4E4E;
+    font-size: 36px;
+}
+
+.Caixa_de_noticias {
+    margin: 0 auto;
+    width: 1151px;
+}
+
+#dados {
+    color: #4E4E4E;
+}
